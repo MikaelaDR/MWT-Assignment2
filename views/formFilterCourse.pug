@@ -1,0 +1,39 @@
+extends layout 
+
+block content 
+    h2 Filter Courses
+
+    form(action="", method="post") 
+
+        label Ongoing Course ID: 
+        input(
+            type="number"
+            disabled=false 
+        )
+        br
+        |
+        label Course Name: 
+        input(
+            type="text"
+            disabled=false 
+        )
+        br
+        |
+        label Department: 
+        input(
+            type="text"
+            disabled=false 
+        )
+        br
+        |
+        label Seat Remaining: 
+        input(
+            type="text"
+            disabled=false 
+        )
+        br
+        |
+        input(
+            type="submit"
+            value="Filter Course"
+        )

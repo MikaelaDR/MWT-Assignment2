@@ -1,0 +1,79 @@
+extends layout 
+
+block content
+    h2 List of All Students
+    //- ul 
+    //- for value, attribute in std_name
+    //-     li #{attribute +1} Student Name : #{value}
+    
+    //- each x in {department}
+    //-     p Departments: #{x}
+    //- each x in {ongoing_course}
+    //-     p Enrolled Courses: #{x}  
+
+    p Student Name: #{std_name[0]}
+    p Student ID: #{std_id[0]}
+    p Department: #{department[0]}
+    p ongoing_courses: #{ongoing_course[0]}
+    br
+    |
+    hr
+    p Student Name: #{std_name[1]}
+    p Student ID: #{std_id[1]}
+    p Department: #{department[1]}
+    p ongoing_courses: #{ongoing_course[1]}
+    br
+    |
+    hr
+    p Student Name: #{std_name[2]}
+    p Student ID: #{std_id[2]}
+    p Department: #{department[2]}
+    p ongoing_courses: #{ongoing_course[2]}
+    br
+    |
+    hr
+    p Student Name: #{std_name[3]}
+    p Student ID: #{std_id[3]}
+    p Department: #{department[3]}
+    p ongoing_courses: #{ongoing_course[3]}
+    br
+    |
+    hr
+                                
+    h2 List of All Ongoing Courses
+    p Student Name: #{std_name[0]}
+    p Student ID: #{std_id[0]}
+    p Department: #{department[0]}
+    p ongoing_courses: #{description[0]}
+    br
+    |
+    hr
+    p Course Name: #{course_name[1]}
+    p Course ID: #{course_id[1]}
+    p Department: #{dept[1]}
+    p Description: #{description[1]}
+    p Seats Remaining: #{seats[1]}
+    br
+    |
+    hr
+    p Course Name: #{course_name[2]}
+    p Course ID: #{course_id[2]}
+    p Department: #{dept[2]}
+    p Description: #{description[2]}
+    p Seats Remaining: #{seats[2]}
+    br
+    |
+    hr
+    p Course Name: #{course_name[3]}
+    p Course ID: #{course_id[3]}
+    p Department: #{dept[3]}
+    p Description: #{description[3]}
+    p Seats Remaining: #{seats[3]}
+    br
+    |
+    hr
+    
+
+    p Course - #{name} #{id}
+    p Department: #{department}
+    p Description: #{description}

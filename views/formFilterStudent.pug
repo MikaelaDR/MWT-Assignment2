@@ -1,0 +1,48 @@
+extends layout
+
+block content
+
+
+    h2 Filter Students
+
+    form(action="", method="post") 
+        label Student ID: 
+        input(
+            type="number"
+            disabled=false 
+        )
+        br
+        |
+        label Name: 
+        input(
+            type="text"
+            id="name"
+            disabled=false 
+        )
+        br
+        |
+        label Department: 
+        input(
+            type="text"
+            disabled=false 
+        )
+        br
+        |
+        label Enrolled Course: 
+        input(
+            type="text"
+            disabled=false 
+        )
+        br
+        |
+        label Completed Course: 
+        input(
+            type="text"
+            disabled=false 
+        )
+        br
+        |
+        input(
+            type="submit"
+            value="Filter Student"
+        )
